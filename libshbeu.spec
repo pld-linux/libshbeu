@@ -15,6 +15,7 @@ BuildRequires:	automake
 BuildRequires:	doxygen
 BuildRequires:	libtool
 BuildRequires:	libuiomux-devel >= 1.5.0
+BuildRequires:	ncurses-devel
 BuildRequires:	pkgconfig
 Requires:	libuiomux >= 1.5.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
