@@ -21,7 +21,7 @@ Requires:	libuiomux >= 1.5.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-libshbeu is a ibrary for controlling SH-Mobile BEU (Blend Engine
+libshbeu is a library for controlling SH-Mobile BEU (Blend Engine
 Unit).
 
 %description -l pl.UTF-8
