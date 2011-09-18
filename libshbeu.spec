@@ -1,13 +1,13 @@
 Summary:	Library for controlling SH-Mobile BEU (Blend Engine Unit)
 Summary(pl.UTF-8):	Biblioteka do sterowania układem SH-Mobile BEU (Blend Engine Unit)
 Name:		libshbeu
-Version:	1.0.2
+Version:	1.1.0
 Release:	1
 License:	LGPL v2+
 Group:		Libraries
-# trailing /%{name}-%{version}.tar.gz is a hack for df
-Source0:	https://oss.renesas.com/modules/document/gate.php/?way=attach&refer=libshbeu&openfile=%{name}-%{version}.tar.gz/%{name}-%{version}.tar.gz
-# Source0-md5:	ce805f08ba38ca83723bbd2df935f58a
+# trailing #/%{name}-%{version}.tar.gz is a hack for df
+Source0:	https://oss.renesas.com/modules/document/gate.php/?way=attach&refer=libshbeu&openfile=%{name}-%{version}.tar.gz#/%{name}-%{version}.tar.gz
+# Source0-md5:	1accc7c988673863727ce21dad62def3
 Patch0:		%{name}-link.patch
 URL:		https://oss.renesas.com/modules/document/?libshbeu
 BuildRequires:	autoconf >= 2.53
@@ -99,7 +99,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS README TODO
 %attr(755,root,root) %{_bindir}/shbeu-display
 %attr(755,root,root) %{_libdir}/libshbeu.so.*.*.*
-%attr(755,root,root) %ghost %{_libdir}/libshbeu.so.1
+%attr(755,root,root) %ghost %{_libdir}/libshbeu.so.2
 
 %files devel
 %defattr(644,root,root,755)
